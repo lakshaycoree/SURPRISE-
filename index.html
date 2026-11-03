@@ -1,21 +1,105 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>A Birthday Surprise for Prachethana 💗</title><style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<div class="teddy">
-  <div class="ear left"></div>
-  <div class="ear right"></div>
-  <div class="face">
-    <div class="eye left-eye"></div>
-    <div class="eye right-eye"></div>
-    <div class="nose">♥</div>
-    <div class="cheek left-cheek"></div>
-    <div class="cheek right-cheek"></div>
-  </div>
-  <div class="body"></div>
-</div>
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4ef, #ffc6dc, #fff0f6);
+  font-family: Georgia, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #a34468;
+}
 
-<div class="hearts">
-  <span>♥</span>
-  <span>♡</span>
-  <span>♥</span>
-  <span>♡</span>
-  <span>♥</span>
-</div>
+.heart {
+  position: absolute;
+  color: #ff8bb8;
+  animation: float 6s infinite ease-in-out;
+  font-size: 25px;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh); opacity: 0; }
+}
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.75);
+  padding: 30px 24px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 35px #e99ab855;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.teddy {
+  font-size: 85px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.letter {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+button {
+  border: none;
+  background: #ff85b3;
+  color: white;
+  padding: 15px 28px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #ff85b355;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+</style></head><body><div class="card">  <div class="teddy">🧸💗</div>  <h1>A Little Letter For You</h1>  <div class="letter">
+    Hey Prachethana! 💕<br><br>
+
+Someone very special deserves
+something very special.
+
+<br><br>
+
+I made this little surprise
+just for you, with lots of love.
+
+<br><br>
+
+Your smile makes my world
+a little more beautiful.
+
+<br><br>
+
+Are you ready to see
+your birthday surprise? 🎀
+
+  </div>  <button onclick="openGift()">
+    Open Your Gift 🎁
+  </button></div><script>
+function openGift() {
+  alert("Your birthday surprise is waiting! 💗");
+}
+</script></body>
+</html>
